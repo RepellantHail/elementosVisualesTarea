@@ -31,13 +31,37 @@ class MainActivity : AppCompatActivity() {
 
         //CheckBox
         checkInitialize()
+        //RadioGroup
+        radioGroupInitialize()
+        //Submit Button
+        btnEnviar(autotextView)
 
+    }
 
+    fun radioGroupInitialize(){
         //Iniciar valor por defecto para radio group
         var radioGroup = findViewById<RadioGroup>(R.id.radioGStatus)
         radioGroup.check(R.id.radioNoVisto)
-        //Submit Button
-        btnEnviar(autotextView)
+
+        val radioButton1 = findViewById<RadioButton>(R.id.radioVisto)
+        val radioButton2 = findViewById<RadioButton>(R.id.radioWatchlist)
+        val radioButton3 = findViewById<RadioButton>(R.id.radioNoVisto)
+
+        radioButton1.setOnClickListener {
+            Toast.makeText(this, "Muy bien, conocerdor!", Toast.LENGTH_SHORT).show()
+        }
+        radioButton2.setOnClickListener {
+            Toast.makeText(this, "Preparate para lloar! :c", Toast.LENGTH_SHORT).show()
+        }
+        radioButton3.setOnClickListener {
+            Toast.makeText(this, "Hmmm..., esperaba más de ti", Toast.LENGTH_SHORT).show()
+        }
+
+        radioGroup.setOnCheckedChangeListener { group, checkedId ->
+            // Handle the checked state change event here
+            val radioButton = findViewById<RadioButton>(checkedId)
+            Toast.makeText(this, "${radioButton.text} checked", Toast.LENGTH_SHORT).show()
+        }
 
     }
 
