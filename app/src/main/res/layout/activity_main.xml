@@ -72,15 +72,8 @@
         android:hint="Ingrese Nombre de Pelicula"
         ></AutoCompleteTextView>
 
-    <LinearLayout
-        android:id="@+id/checkBox_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:orientation="vertical">
-
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBox1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/checkBox1_text"
@@ -128,7 +121,6 @@
             android:drawablePadding="5dp"
             android:textSize="14sp"
             android:padding="7dp"/>
-    </LinearLayout>
 
     <RadioGroup
         android:id="@+id/radioGStatus"
