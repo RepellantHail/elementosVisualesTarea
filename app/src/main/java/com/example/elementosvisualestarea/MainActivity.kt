@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+
     fun radioGroupInitialize(){
         //Iniciar valor por defecto para radio group
         var radioGroup = findViewById<RadioGroup>(R.id.radioGStatus)
