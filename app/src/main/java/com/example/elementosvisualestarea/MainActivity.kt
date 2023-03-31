@@ -1,5 +1,6 @@
 package com.example.elementosvisualestarea
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
@@ -14,6 +15,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Button to Movie List
+        var btnFilm: Button
+        btnFilm = findViewById(R.id.activity_main_btnFilm)
+        btnFilm.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(view: View?) {
+                if (view != null) {
+                    abrirFilms(view)
+                }
+            }
+        })
+
+
         val autotextView = findViewById<AutoCompleteTextView>(R.id.edtNombreMovie)
         // Get the array of movies
         val movies = resources.getStringArray(R.array.Movies)
@@ -21,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1, movies)
         autotextView.setAdapter(adapter)
 
+        //Submit Button
         val button = findViewById<Button>(R.id.btnAdd)
         if (button != null)
         {
@@ -31,5 +45,14 @@ class MainActivity : AppCompatActivity() {
             })
         }
 
+    }
+
+    fun abrirFilms(v:View){
+        when (v.getId()) {
+            R.id.activity_main_btnFilm -> {
+                val intent = Intent(this, filmsActivity::class.java)
+                startActivity(intent)
+            }
+    }
     }
 }

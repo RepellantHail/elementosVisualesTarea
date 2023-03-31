@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Letterboxed"
+        android:text="Letterboxd"
         android:textSize="24sp"
         android:padding="4dp"
         android:drawablePadding="8dp"
@@ -23,6 +23,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/activity_main_btnFilm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -76,6 +77,7 @@
         android:id="@+id/checkBox_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="5dp"
         android:orientation="vertical">
 
         <CheckBox
@@ -83,7 +85,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/checkBox1_text"
-            android:textSize="18sp"
+            android:drawableStart="@drawable/extranjero"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
             android:padding="7dp"/>
 
         <CheckBox
@@ -91,7 +95,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/checkBox2_text"
-            android:textSize="18sp"
+            android:drawableStart="@drawable/block"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
             android:padding="7dp"/>
 
         <CheckBox
@@ -99,7 +105,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/checkBox3_text"
-            android:textSize="18sp"
+            android:drawableStart="@drawable/pokemon"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
             android:padding="7dp"/>
 
         <CheckBox
@@ -107,7 +115,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/checkBox4_text"
-            android:textSize="18sp"
+            android:drawableStart="@drawable/asiento"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
             android:padding="7dp"/>
 
         <CheckBox
@@ -115,9 +125,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/checkBox5_text"
-            android:textSize="18sp"
+            android:drawableStart="@drawable/mexico"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
             android:padding="7dp"/>
     </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioVisto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/seen"
+            android:text="Vista"
+            ></RadioButton>
+        <RadioButton
+            android:id="@+id/radioWatchlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watchlist"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/watchlist"
+            ></RadioButton>
+        <RadioButton
+            android:id="@+id/radioNoVisto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Vista"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/unseen"
+            ></RadioButton>
+    </RadioGroup>
 
     <Button
         android:id="@+id/btnAdd"

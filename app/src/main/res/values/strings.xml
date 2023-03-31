@@ -4,22 +4,113 @@
     <string name="submitted_lang">Pelicula Agregada:</string>
 
 
-    <string name="checkBox1">Coding contests</string>
-    <string name="checkBox2_text">Civil Engineering Courses</string>
-    <string name="checkBox1_text">Coding Contests</string>
-    <string name="checkBox3_text">Computer Science Courses</string>
-    <string name="checkBox4_text">Company specific coding questions</string>
-    <string name="checkBox5_text">Download movies</string>
+    <string name="checkBox1_text">Pelicula Extranjera</string>
+    <string name="checkBox2_text">+18</string>
+    <string name="checkBox3_text">Animacion</string>
+    <string name="checkBox4_text">3D</string>
+    <string name="checkBox5_text">Mexicana</string>
 
     <string-array name="Movies">
-        <item>Java</item>
-        <item>Kotlin</item>
-        <item>Swift</item>
-        <item>Python</item>
-        <item>Scala</item>
-        <item>Perl</item>
-        <item>Javascript</item>
-        <item>Jquery</item>
+        <item>Metropolis</item>
+        <item>Spirited Away</item>
+        <item>Big Fish and Begonia</item>
+        <item>Breadwinner</item>
+        <item>Monsters Inc</item>
+        <item>Paprika</item>
+        <item>Isle of Dogs</item>
+        <item>Spider-Man into the spider-verse</item>
+        <item>The iron Giant</item>
+        <item>El dorado</item>
+        <item>Fantastic Mr. Fox</item>
+        <item>The Prince of Egypt</item>
+        <item>Paranorman</item>
+        <item>Kikis Delivery Service</item>
+        <item>The Boxtrolls</item>
+        <item>Ponyo</item>
+        <item>Luca</item>
+        <item>Mary and the witch\'s Flower</item>
+        <item>Mitchels vs the Machines</item>
+        <item>Akira</item>
+        <item>My neighbor Totoro</item>
+        <item>Batman Ninja</item>
+        <item>Monster House</item>
+        <item>Corpse Bride</item>
+        <item>Whisper of the Heart</item>
+        <item>Arriety</item>
+        <item>I Lost My body</item>
+        <item>Nausicaä</item>
+        <item>the treasure Planet</item>
+        <item>Your Name</item>
+        <item>The girl who leapt throught time</item>
+        <item>The Nightmare before Christmas</item>
+        <item>Perfect blue</item>
+        <item>Belle</item>
+        <item>Promare</item>
+        <item>Princess Arete</item>
+        <item>Klaus</item>
+        <item>Princess Mononoke</item>
+        <item>The grave of the fireflies</item>
+        <item>Mary and Max</item>
+        <item>Arthur Christmas</item>
+        <item>Evangelion</item>
+        <item>Over the moon</item>
+        <item>Earwig and the witch</item>
+        <item>Drifting Home</item>
+        <item>A letter to Momo</item>
+        <item>Lego Movie</item>
+        <item>Sing</item>
+        <item>Curious George</item>
+        <item>Sponge Bob</item>
+        <item>Rise of the Guardians</item>
+        <item>Raya</item>
+        <item>Smurfs</item>
+        <item>Wish Dragon</item>
+        <item>Pinocchio</item>
+        <item>Fantasia</item>
+        <item>The Lion King</item>
+        <item>Beauty and the beast</item>
+        <item>Wall-e</item>
+        <item>Finding Nemo</item>
+        <item>Bambi</item>
+        <item>Lili \% Stitch</item>
+        <item>Alice in Wonderland</item>
+        <item>Toy Story</item>
+        <item>Sleeping Beauty</item>
+        <item>Dumbo</item>
+        <item>The Incredibles</item>
+        <item>Rogger Rabbit</item>
+        <item>Aladdin</item>
+        <item>Inside Out</item>
+        <item>The little mermaid</item>
+        <item>The sword on the stone</item>
+        <item>Snow white</item>
+        <item>Tangled</item>
+        <item>Robin Hood</item>
+        <item>Hercules</item>
+        <item>Up</item>
+        <item>Ratatoille</item>
+        <item>kung Fu Panda</item>
+        <item>How to train your dragon</item>
+        <item>Atlantis</item>
+        <item>Despicable Me</item>
+        <item>Coco</item>
+        <item>tarzan</item>
+        <item>Coraline</item>
+        <item>Moana</item>
+        <item>Soul</item>
+        <item>Frozen</item>
+        <item>Sherk</item>
+        <item>Zootopia</item>
+        <item>Wreck-it Ralph</item>
+        <item>The fox and the hound</item>
+        <item>Big Hero 6</item>
+        <item>Peter Pan</item>
+        <item>Anastasia</item>
+        <item>Truning Red</item>
+        <item>Brother Bear</item>
+        <item>The good Dinosaur</item>
+        <item>The croods</item>
+        <item>christopher Robin</item>
     </string-array>
 
 </resources>
