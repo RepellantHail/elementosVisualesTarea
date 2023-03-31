@@ -1,7 +1,9 @@
 package com.example.elementosvisualestarea
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.LinearLayout
+import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -14,7 +16,7 @@ class filmsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_films)
 
         addMovies()
-
+        addStreming()
     }
 
     fun addMovies(){
@@ -30,6 +32,15 @@ class filmsActivity : AppCompatActivity() {
         }
     }
 
-
+    fun addStreming(){
+        val spinner: Spinner = findViewById(R.id.spinner_streaming)
+// Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter.createFromResource(this,R.array.Streaming,android.R.layout.simple_spinner_item).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner.adapter = adapter
+        }
+    }
 
 }

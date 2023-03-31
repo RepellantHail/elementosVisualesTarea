@@ -113,4 +113,13 @@
         <item>christopher Robin</item>
     </string-array>
 
+    <string-array name="Streaming">
+        <item>Netflix</item>
+        <item>HBO</item>
+        <item>Mubi</item>
+        <item>Prime</item>
+        <item>Paramount+</item>
+        <item>Apple Tv</item>
+    </string-array>
+
 </resources>

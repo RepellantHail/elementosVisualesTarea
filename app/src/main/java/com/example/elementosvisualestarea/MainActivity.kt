@@ -3,9 +3,12 @@ package com.example.elementosvisualestarea
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.view.inputmethod.EditorInfo
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
 
@@ -28,11 +31,23 @@ class MainActivity : AppCompatActivity() {
 
 
         val autotextView = findViewById<AutoCompleteTextView>(R.id.edtNombreMovie)
+        autotextView.setOnEditorActionListener{ textView,i,keyEvent ->
+            var handled = false
+            if(i == EditorInfo.IME_ACTION_DONE){
+                //Agregar evento cuando se agregue el nombre de una pelicula
+                handled = true
+            }
+            handled
+        }
         // Get the array of movies
         val movies = resources.getStringArray(R.array.Movies)
         // Create adapter and add in AutoCompleteTextView
         val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1, movies)
         autotextView.setAdapter(adapter)
+
+        var radioGroup = findViewById<RadioGroup>(R.id.radioGStatus)
+        radioGroup.check(R.id.radioNoVisto)
+
 
         //Submit Button
         val button = findViewById<Button>(R.id.btnAdd)
