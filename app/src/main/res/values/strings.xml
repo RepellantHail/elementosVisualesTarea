@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ElementosVisualesTarea</string>
+
+    <string name="submitted_lang">Pelicula Agregada:</string>
+
+
+    <string name="checkBox1">Coding contests</string>
+    <string name="checkBox2_text">Civil Engineering Courses</string>
+    <string name="checkBox1_text">Coding Contests</string>
+    <string name="checkBox3_text">Computer Science Courses</string>
+    <string name="checkBox4_text">Company specific coding questions</string>
+    <string name="checkBox5_text">Download movies</string>
+
+    <string-array name="Movies">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+        <item>Javascript</item>
+        <item>Jquery</item>
+    </string-array>
+
+</resources>
